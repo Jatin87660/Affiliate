@@ -173,6 +173,10 @@ router.post('/login', async (req, res) => {
   res.redirect('/main');
 });
 
+router.get('/forgot-password',(req,res)=>{
+  res.render('forgot-password');
+})
+
 
 
 router.post('/forgot-password', async (req, res) => {
