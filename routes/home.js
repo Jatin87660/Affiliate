@@ -14,7 +14,7 @@ router.get('/login',(req,res)=>{
 router.get('/help',(req,res)=>{
     res.render('help');
 })
-router.get('/admin',(req,res)=>{
+router.get('/admin/01',(req,res)=>{
     res.render('admin');
 })
 

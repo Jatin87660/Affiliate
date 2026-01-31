@@ -39,6 +39,13 @@ app.use('/auth', auth)
 const main = require('./routes/main');
 app.use('/main',main);
 
+const admin = require('./routes/admin');
+app.use('/admin',admin);
+
+
+require('./cron/settleWallet');
+
+
 
 
 

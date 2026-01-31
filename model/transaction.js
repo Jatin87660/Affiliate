@@ -5,6 +5,9 @@ const transactionSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    order_id :{
+        type:String
+    },
     amount: {
         type: Number
         

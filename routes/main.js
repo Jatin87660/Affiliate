@@ -6,6 +6,7 @@ const Order = require('../model/order_id')
 const Pending = require('../model/pending_orders')
 const Wallet = require('../model/wallet')
 const Transaction  = require('../model/transaction')
+const New_Order = require('../model/new_orders_for_admin')
 
 
 
@@ -66,11 +67,20 @@ router.post('/confirm-order/:email', async (req, res) => {
       amount: Order_Amount
     });
 
-    await Pending.create({
+    // order create for admin (only new)
+    await New_Order.create({
       email,
       order_id: Order_Id,
       amount: Order_Amount
     });
+
+
+    
+    // await Pending.create({
+    //   email,
+    //   order_id: Order_Id,
+    //   amount: Order_Amount
+    // });
 
     res.redirect('/main')
   } catch (err) {

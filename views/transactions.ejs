@@ -14,9 +14,9 @@
       <div class="card mt-3 shadow-sm">
         <div class="card-body">
           
-          <p><strong>Email:</strong> <%= transaction.email %></p>
+          <p><strong>Email:</strong> <%= transaction.order_id %></p>
           <p><strong>Amount:</strong> ₹<%= transaction.amount %></p>
-          <p><strong>Created At:</strong> <%= transaction.createdAt.toLocaleString() %></p>
+          <p><strong>Time: </strong> <%= transaction.createdAt.toLocaleString() %></p>
         </div>
       </div>
     <% } else { %>
