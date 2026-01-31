@@ -15,7 +15,7 @@ router.get('/help',(req,res)=>{
     res.render('help');
 })
 router.get('/admin/01',(req,res)=>{
-    res.render('admin');
+    res.render('admin_login');
 })
 
 

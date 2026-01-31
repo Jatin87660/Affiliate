@@ -14,6 +14,10 @@ const order_id_Schema = new mongoose.Schema({
         type:String,
         required:true
     },
+    app:{
+        type: String,
+        default:"amazon"
+    },
     
     createdAt: {
         type: Date,
