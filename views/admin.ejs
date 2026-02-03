@@ -92,7 +92,7 @@
 <script>
 async function getOrders() {
     try {
-        const response = await fetch('http://www.affiliate.gladden.in/admin/api/orders');
+        const response = await fetch('/admin/api/orders');
         const result = await response.json();
 
         const list = document.getElementById('orderList');
