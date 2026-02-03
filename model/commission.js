@@ -10,7 +10,7 @@ const order_id_Schema = new mongoose.Schema({
         required:true,
         unique:true
     },
-    amount: {
+    commission: {
         type:String,
         required:true
     },
